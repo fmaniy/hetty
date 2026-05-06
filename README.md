@@ -80,6 +80,11 @@ Configure your browser or system to use `http://localhost:8080` as the HTTP prox
 > "Also use this proxy for HTTPS". Firefox has its own certificate store, so you'll
 > also need to import the CA cert under Settings → Privacy & Security → Certificates → View Certificates.
 
+> **Note (personal):** On Linux with Chrome/Chromium, you can launch the browser already pointed at
+> the proxy with:
+> `chromium --proxy-server="http://127.0.0.1:8080" --ignore-certificate-errors-spki-list`
+> Though it's cleaner to import the CA cert and skip `--ignore-certificate-errors-spki-list`.
+
 ## Development
 
 ### Prerequisites
@@ -107,4 +112,4 @@ guidelines on how to contribute to this project.
 
 ## License
 
-[Apache License 2.0](LICENSE)
+[Apa
