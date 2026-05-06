@@ -75,6 +75,11 @@ The certificate is stored at `~/.hetty/hetty_cert.pem` by default.
 
 Configure your browser or system to use `http://localhost:8080` as the HTTP proxy.
 
+> **Note (personal):** In Firefox, go to Settings → General → Network Settings → Manual proxy
+> configuration. Set HTTP Proxy to `127.0.0.1` and Port to `8080`. Make sure to check
+> "Also use this proxy for HTTPS". Firefox has its own certificate store, so you'll
+> also need to import the CA cert under Settings → Privacy & Security → Certificates → View Certificates.
+
 ## Development
 
 ### Prerequisites
