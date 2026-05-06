@@ -68,6 +68,9 @@ don't exist. You need to import the certificate into your browser/OS trust store
 
 The certificate is stored at `~/.hetty/hetty_cert.pem` by default.
 
+> **Note (personal):** On macOS, you can trust the cert quickly with:
+> `sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/.hetty/hetty_cert.pem`
+
 ### Proxy Configuration
 
 Configure your browser or system to use `http://localhost:8080` as the HTTP proxy.
