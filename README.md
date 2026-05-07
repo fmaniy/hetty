@@ -96,12 +96,9 @@ Configure your browser or system to use `http://localhost:8080` as the HTTP prox
 ### Running locally
 
 ```sh
-# Start the API server (with hot reload via Air if installed: https://github.com/cosmtrek/air)
-go run ./cmd/hetty/main.go
+# Start the API server (Go)
+go run ./cmd/hetty
 
 # In a separate terminal, start the Next.js dev server
 cd admin && pnpm dev
 ```
-
-> **Note (personal):** I use `air` for Go hot-reloading during development. Install with
-> `go install github.com/cosmtrek/air@latest`, then just run `air` in the project root.
