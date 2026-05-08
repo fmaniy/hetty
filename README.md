@@ -96,13 +96,12 @@ Configure your browser or system to use `http://localhost:8080` as the HTTP prox
 ### Running locally
 
 ```sh
-# Start the API server (Go) with live reload via air (go install github.com/cosmtrek/air@latest)
+# Start the API server (Go) with hot-reload via air (install: go install github.com/cosmtrek/air@latest)
 air
 
 # In a separate terminal, start the Next.js dev server
 cd admin && pnpm dev
 ```
 
-> **Note (personal):** I use `air` for hot-reloading the Go backend during development.
-> Install it with `go install github.com/cosmtrek/air@latest` and run `air` from the
-> repo root. The `.air.toml` config in the repo should work out of the box.
+> **Note (personal):** I use `air` for Go hot-reload during development — it watches for file changes
+> and restarts the server automatically. Much faster than manually rerunning `go run` each time.
