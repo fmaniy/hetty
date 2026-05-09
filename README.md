@@ -96,16 +96,11 @@ Configure your browser or system to use `http://localhost:8080` as the HTTP prox
 ### Running locally
 
 ```sh
-# Start the API server (Go)
+# Start the API server (runs on :8080 by default)
 go run ./cmd/hetty
-```
 
-```sh
 # In a separate terminal, start the Next.js dev server
 cd admin
+pnpm install
 pnpm dev
 ```
-
-> **Note (personal):** When running locally, the Go server defaults to `:8080` and the
-> Next.js dev server runs on `:3000`. The Next.js app proxies API requests to `:8080`
-> automatically via the `next.config.js` rewrites.
